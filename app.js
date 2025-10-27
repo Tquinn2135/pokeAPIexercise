@@ -19,7 +19,9 @@
           img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${randomPokemon}.png`
           img.alt = pokemon.name
           const div = document.querySelector('div')
+          const h3 = document.querySelector('h3')
           div.appendChild(img)
+          h3.textContent = pokemon.name.toUpperCase()
      }
       
      const pokemon = await getRandomPokemon()
