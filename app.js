@@ -8,7 +8,7 @@
           return await response.json()
      }     
      
-     const getRandomPokemon = async randomPokemon => {
+     const getRandomPokemon = async pokemon => {
           const url = 'https://pokeapi.co/api/v2/pokemon/' + randomPokemon
           const json = await getJsonFrom(url)
           return json
